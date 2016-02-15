@@ -9,6 +9,8 @@ var no_error = 0;
 $("#btn").click(function () {
     $("#header").hide();
     $("#tbl").find('tbody').empty();  //to clear DOM
+    $("#tbl").find('tbody').show();
+    
     leftArray.length = 0;
     rightArray.length = 0;
     
@@ -37,7 +39,7 @@ $("#btn").click(function () {
                 $(this).append($('<td class="left_img" id="right_move">').append($('<img class="target">').attr('src', 'img/' + images[leftArray[i]]).text(leftArray[i])));
                 
                 if(i==0){
-                     $(this).append('<td id="canvasCol"><canvas id="cvs" width="100%"></canvas></td>');
+                     $(this).append('<td id="canvasCol"><canvas id="cvs"></canvas></td>');
                      $(document).find('#canvasCol').attr('rowspan', input*2);
                      $(document).find('#cvs').attr('height', input*100);
                 }

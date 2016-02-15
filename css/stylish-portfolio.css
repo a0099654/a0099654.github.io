@@ -241,13 +241,6 @@ img{
 #cvs{
     margin-left: 20px;
     margin-right: 20px;
-    
-    @media(max-width: 1200px){
-        #cvs{
-            width: 100%;
-            height: auto;
-        }
-    }
 }
 
 
