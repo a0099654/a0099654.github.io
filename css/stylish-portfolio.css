@@ -10,6 +10,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    background-color: azure;
 }
 
 body {
@@ -211,3 +212,42 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+
+/* Table */
+
+#tbl{
+     margin: 0 auto;
+}
+
+td { 
+    font-size: 200%; 
+}
+
+td.left { 
+    padding-right: 50px; 
+}
+
+td.right { 
+    padding-left: 50px; 
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+/* Canvas */
+#cvs{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    @media(max-width: 1200px){
+        #cvs{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
