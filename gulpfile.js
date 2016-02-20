@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
+var sass = require('gulp-ruby-sass');
 
 gulp.task('minifyjs', function(){
     gulp.src('js/*.js')
@@ -7,8 +8,15 @@ gulp.task('minifyjs', function(){
         .pipe(gulp.dest('minjs'));    
 });
 
-gulp.task('watch', function(){
-    gulp.watch('js/*.js', ['minifyjs']);
+gulp.task('style', function(){
+    return sass('scss/**/*.scss')
+        .on('error', sass.logError)
+        .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['minifyjs', 'watch']);
+gulp.task('watch', function(){
+    gulp.watch('js/*.js', ['minifyjs']);
+    gulp.watch('scss/**/*.scss', ['style']);
+});
+  
+gulp.task('default', ['minifyjs', 'style' , 'watch']);

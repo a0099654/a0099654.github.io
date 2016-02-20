@@ -1,0 +1,28 @@
+.size {
+  padding-bottom: 10px;
+  padding-top: 10px; }
+
+.info {
+  background: #f55;
+  height: 300px;
+  position: relative;
+  width: 1440px; }
+
+.side-bar {
+  background-color: lightblue;
+  float: left;
+  width: 32%;
+  word-wrap: break-word; }
+
+.sidebar-style {
+  padding: 20px; }
+
+.responsive-page {
+  background-color: slategrey;
+  height: 1200px; }
+
+.rcorners {
+  border: 2px solid #73ad21;
+  height: 200px;
+  margin: 20px;
+  width: 200px; }
