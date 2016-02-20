@@ -9,7 +9,7 @@
   width: 1440px; }
 
 .side-bar {
-  background-color: lightblue;
+  background-color: #add8e6;
   float: left;
   width: 32%;
   word-wrap: break-word; }
@@ -18,7 +18,7 @@
   padding: 20px; }
 
 .responsive-page {
-  background-color: slategrey;
+  background-color: #708090;
   height: 1200px; }
 
 .rcorners {

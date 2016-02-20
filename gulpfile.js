@@ -24,5 +24,5 @@ gulp.task('watch', function(){
     gulp.watch('js/*.js', ['minifyjs']);
     gulp.watch('scss/**/*.scss', ['style']);
 });
-  
+
 gulp.task('default', ['minifyjs', 'style' , 'watch']);
