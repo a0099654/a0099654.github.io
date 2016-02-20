@@ -7,6 +7,8 @@ gulp.task('minifyjs', function(){
         .pipe(gulp.dest('minjs'));    
 });
 
-gulp.task('default', function(){
-    
+gulp.task('watch', function(){
+    gulp.watch('js/*.js', ['minifyjs']);
 });
+
+gulp.task('default', ['minifyjs', 'watch']);
