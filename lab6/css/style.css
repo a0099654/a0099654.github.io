@@ -1,0 +1,42 @@
+body{
+    background: url(../img/banner.jpg) no-repeat center center fixed;
+    background-opacity: 0.5;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.aligner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin_table{
+    background-color: #F0F8FF;
+    margin: 0 auto;
+}
+
+/* Table */
+#tbl{
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+td { 
+    font-size: 150%; 
+}
+
+td.left { 
+    padding-right: 50px; 
+}
+
+td.right { 
+    padding-left: 50px; 
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
